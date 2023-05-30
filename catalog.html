@@ -39,7 +39,243 @@
     </div>
   </header>
   <main>
-
+    <section class="hotels">
+      <h1 class="hotels__title">Гостиницы Седоны</h1>
+      <div class="breadcrumbs">
+        <a class="breadcrumbs__home" href="index.html">
+          <!-- background-image, svg  -->
+        </a>
+        <a class="breadcrumbs__hotels" href="/">Гостиницы</a>
+      </div>
+      <form class="hotels-form" action="#" method="post">
+        <fieldset class="hotels-form__fieldset">
+          <legend class="hotels-form__title">Инфраструктура:</legend>
+          <label class="hotels-form__label">Бассейн
+            <input class="hotels-form__input"
+                   type="checkbox"
+                   name="hotels-form-pool"
+                   id="hotels-form-pool"
+                   checked>
+            <span class="hotels-form__custom-checkbox"></span>
+          </label>
+          <label class="hotels-form__label">Парковка
+            <input class="hotels-form__input"
+                   type="checkbox"
+                   name="hotels-form-parking"
+                   id="hotels-form-parking"
+                   checked>
+            <span class="hotels-form__custom-checkbox"></span>
+          </label>
+          <label class="hotels-form__label">Wi-Fi
+            <input class="hotels-form__input"
+                   type="checkbox"
+                   name="hotels-form-wifi"
+                   id="catalog-form-wifi">
+            <span class="hotels-form__custom-checkbox"></span>
+          </label>
+        </fieldset>
+        <fieldset class="hotels-form__fieldset">
+          <legend class="hotels-form__title">Тип жилья:</legend>
+          <label class="hotels-form__label">Гостиница
+            <input class="hotels-form__input"
+                   type="radio"
+                   name="catalog-form-housing"
+                   id="hotels-form-hotel"
+                   checked>
+            <span class="hotels-form__custom-checkbox"></span>
+          </label>
+          <label class="hotels-form__label">Мотель
+            <input class="hotels-form__input"
+                   type="radio"
+                   name="hotels-form-housing"
+                   id="hotels-form-motel">
+            <span class="hotels-form__custom-checkbox"></span>
+          </label>
+          <label class="hotels-form__label">Апартаменты
+            <input class="hotels-form__input"
+                   type="radio"
+                   name="hotels-form-housing"
+                   id="hotels-form-appartment">
+            <span class="hotels-form__custom-checkbox"></span>
+          </label>
+        </fieldset>
+        <!-- не поняла как делать два ползунка -->
+        <fieldset class="hotels-form__fieldset">
+          <legend class="hotels-form__title">Стоимость, ₽:</legend>
+          <button class="hotels-form__button toggle-min" type="button">
+            <span class="visually-hidden">Изменить минимальную цену.</span>
+          </button>
+          <button class="hotels-form__button toggle-max" type="button">
+            <span class="visually-hidden">Изменить максимальную цену.</span>
+          </button>
+          <label class="hotels-form__from">
+            <input class="hotels-form__min"
+                   type="number"
+                   value="0"
+                   name="min-price">
+            от
+          </label>
+          <label class="hotels-form__to">
+            <input class="hotels-form__max"
+                   type="number"
+                   value="9000"
+                   name="max-price">
+            до
+          </label>
+          <input class="hotels-form__range"
+                 type="range"
+                 min="0"
+                 max="9000"
+                 name="hotels-form-range"
+                 id="hotels-form-range">
+        </fieldset>
+        <div class="hotels-form__buttons">
+          <button type="submit">Применить</button>
+          <button type="reset">Сбросить</button>
+        </div>
+      </form>
+    </section>
+    <section class="result">
+      <h2 class="visually-hidden">Результаты поиска</h2>
+      <div class="result__wrapper">
+        <div class="result__heading">
+          <h2 class="result__title">Найдено гостиниц: 38</h2>
+          <form class="result__form sorting">
+            <label class="visually-hidden" for="sort">Сортировка</label>
+            <select class="sorting__select" id="sort" name="sort">
+              <option class="sorting__option" value="cheap">Сначала дешёвое</option>
+              <option class="sorting__option" value="expensive">Сначала дорогое</option>
+              <option class="sorting__option" value="popular">Сначала популярное</option>
+              <option class="sorting__option" value="popular">Высокий рейтинг</option>
+            </select>
+          </form>
+          <ul class="result__net net-list">
+            <li class="net-list__item"></li>
+            <li class="net-list__item"></li>
+            <li class="net-list__item"></li>
+          </ul>
+        </div>
+        <div class="result__content catalog">
+          <ul class="catalog__list">
+            <li class="catalog__card catalog-card">
+              <figure>
+                <img class="catalog-card__img" src="" alt="Изображение к карточке">
+                <figcaption class="catalog-card__title">Amara Resort & Spa</figcaption>
+              </figure>
+              <div class="catalog-card__left">
+                <p class="catalog-card__housing">Гостинца</p>
+                <a class="catalog-card__link" href="#">Подробнее</a>
+                <div class="catalog-card__stars">
+                  <!-- stars -->
+                </div>
+              </div>
+              <div class="catalog-card__right">
+                <p class="catalog-card__price">От 4000 &#8381;</p>
+                <button class="catalog-card__button" type="button">В избранное</button>
+                <p class="catalog-card__rate">Рейтинг: 8,5</p>
+              </div>
+            </li>
+            <li class="catalog__card">
+              <figure>
+                <img class="catalog-card__img" src="" alt="Изображение к карточке">
+                <figcaption class="catalog-card__title">Desert Quail Inn</figcaption>
+              </figure>
+              <div class="catalog-card__left">
+                <p class="catalog-card__housing">Гостинца</p>
+                <a class="catalog-card__link" href="#">Подробнее</a>
+                <div class="catalog-card__stars">
+                  <!-- stars -->
+                </div>
+              </div>
+              <div class="catalog-card__right">
+                <p class="catalog-card__price">От 3000 &#8381;</p>
+                <button class="catalog-card__button" type="button">В избранное</button>
+                <p class="catalog-card__rate">Рейтинг: 8,9</p>
+              </div>
+            </li>
+            <li class="catalog__card">
+              <figure>
+                <img class="catalog-card__img" src="" alt="Изображение к карточке">
+                <figcaption class="catalog-card__title">Villas at Poco Diablo</figcaption>
+              </figure>
+              <div class="catalog-card__left">
+                <p class="catalog-card__housing">Гостинца</p>
+                <a class="catalog-card__link" href="#">Подробнее</a>
+                <div class="catalog-card__stars">
+                  <!-- stars -->
+                </div>
+              </div>
+              <div class="catalog-card__right">
+                <p class="catalog-card__price">От 2000 &#8381;</p>
+                <button class="catalog-card__button" type="button">В избранное</button>
+                <p class="catalog-card__rate">Рейтинг: 9,2</p>
+              </div>
+            </li>
+            <li class="catalog__card">
+              <figure>
+                <img class="catalog-card__img" src="" alt="Изображение к карточке">
+                <figcaption class="catalog-card__title">GreenTree Inn</figcaption>
+              </figure>
+              <div class="catalog-card__left">
+                <p class="catalog-card__housing">Гостинца</p>
+                <a class="catalog-card__link" href="#">Подробнее</a>
+                <div class="catalog-card__stars">
+                  <!-- stars -->
+                </div>
+              </div>
+              <div class="catalog-card__right">
+                <p class="catalog-card__price">От 3000 &#8381;</p>
+                <button class="catalog-card__button" type="button">В избранное</button>
+                <p class="catalog-card__rate">Рейтинг: 9,2</p>
+              </div>
+            </li>
+          </ul>
+          <button class="result__button" type="button">Загрузхить ещё</button>
+        </div>
+        <div class="result__additionally">
+          <ul class="pagination">
+            <li class="pagination__item">
+              <a class="pagination__link pagination-current">1</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">2</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">3</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">4</a>
+            </li>
+            <li class="pagination__item">
+              <p class="pagination__item_dots">...</p>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">10</a>
+            </li>
+          </ul>
+          <form class="result__quantity quantity" action="#" method="post">
+            <label class="quantity__label" for="quantity">Гостиниц на странице:</label>
+            <select class="quantity__select" name="quantity" id="quantity">
+              <option class="quantity__option" value="4">4</option>
+              <option class="quantity__option" value="4">5</option>
+              <option class="quantity__option" value="4">6</option>
+            </select>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="submission">
+      <h2 class="submission__title">Подпишись на нашу рассылку</h2>
+      <p class="submission__subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <form class="submission__form" action="#" method="post">
+        <input class="submission__input"
+               type="text" 
+               name="submission" 
+               id="submission" 
+               placeholder="Ваш e-mail">
+        <button class="submission__button" type="submit">Подписаться</button>
+      </form>
+    </section>
   </main>
   <footer class="footer">
     <div class="footer__wrapper">
