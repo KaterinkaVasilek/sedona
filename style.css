@@ -1,0 +1,51 @@
+.intro__wrapper {
+  background-image: url("assets/media/pics/index-background.jpg");
+}
+
+.benefits__img {
+  background-image: url("assets/media/pics/benefits1.jpg");
+}
+
+.benefits__pic {
+  background-image: url("assets/media/pics/benefits2.jpg");
+}
+
+.subscription__wrapper {
+  background-image: url("assets/media/pics/subscription.jpg");
+}
+
+.result__wrapper {
+  background-image: url("assets/media/pics/catalog-background.jpg");
+}
+
+.twitter {
+  background-image: url("assets/media/svg/twitter.svg");
+}
+
+.facebook {
+  background-image: url("assets/media/svg/facebook.svg");
+}
+
+.youtube {
+  background-image: url("assets/media/svg/youtube.svg");
+}
+
+.academy-logo {
+  background-image: url("assets/media/svg/logo-htmlacademy.svg");
+}
+
+.breadcrumbs__home {
+  background-image: url("assets/media/svg/home.svg");
+}
+
+.layout-tile {
+  background-image: url("assets/media/svg/layout-tile.svg");
+}
+
+.layout-slideshow {
+  background-image: url("assets/media/svg/layout-slideshow.svg");
+}
+
+.layout-list {
+  background-image: url("assets/media/svg/layout-list.svg");
+}
