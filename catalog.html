@@ -17,31 +17,27 @@
         <nav class="header__nav header-nav">
           <ul class="header-nav__list">
             <li class="header-nav__item">
-              <a class="header-nav__link" href="#">Главная</a>
+              <a class="header-nav__link" href="index.html">Главная</a>
             </li>
             <li class="header-nav__item">
-              <a class="header-nav__link" href="#">О Седоне</a>
+              <a class="header-nav__link" href="index.html#benefits">О Седоне</a>
             </li>
             <li class="header-nav__item">
-              <a class="header-nav__link" href="#">Гостиницы</a>
+              <a class="header-nav__link" href="/">Гостиницы</a>
             </li>
           </ul>
         </nav>
       </div>
       <div class="header__right">
+        <span class="visually-hidden">Кнопка поиска.</span>
           <button class="search">
-            <span class="visually-hidden">Кнопка поиска.</span>
-            <svg class="search__icon" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M19.0257 17.05L15.3152 13.35C16.318 12.05 17.02 10.35 17.02 8.44995C17.02 4.04995 13.4098 0.449951 8.99732 0.449951C4.58483 0.449951 0.974609 4.14995 0.974609 8.54995C0.974609 12.95 4.58483 16.55 8.99732 16.55C10.8024 16.55 12.5072 15.95 13.9112 14.85L17.6217 18.55L19.0257 17.05ZM8.99732 14.55C5.68795 14.55 2.98029 11.85 2.98029 8.54995C2.98029 5.24995 5.68795 2.54995 8.99732 2.54995C12.3067 2.54995 15.0143 5.24995 15.0143 8.54995C15.0143 11.85 12.3067 14.55 8.99732 14.55Z" fill="black"/>
-            </svg>
+            <svg class="search__icon" width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m19 17-3.7-3.7A8 8 0 0 0 17 8.4a8 8 0 0 0-8-8 8 8 0 1 0 5 14.4l3.6 3.8L19 17ZM9 14.7a6 6 0 0 1-6-6 6 6 0 0 1 12 0 6 6 0 0 1-6 6Z" fill="#000"/></svg>
           </button>
         <div class="visually-hidden">Кнопка избранное.
+          <span class="visually-hidden">Количество понравившихся вариантов.</span>
           <button class="favourite">
-            <span class="visually-hidden">Количество понравившихся вариантов.</span>
-            <svg class="favourite__icon" width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M9.44381 17C9.14296 17 8.84211 16.9 8.64154 16.6C3.22622 10.5 1.92253 9.1 1.62168 8.7C0.91969 7.8 0.518555 6.6 0.518555 5.4C0.518555 2.4 2.92537 0 6.03417 0C7.33785 0 8.54126 0.5 9.5441 1.3C10.5469 0.5 11.8506 0 13.054 0C16.0625 0 18.5696 2.4 18.5696 5.4C18.5696 6.7 18.0682 7.9 17.266 8.8L10.2461 16.7C10.0455 16.9 9.84495 17 9.44381 17ZM3.42679 7.5C3.72764 7.9 6.93672 11.5 9.5441 14.4L15.7617 7.4C16.2631 6.9 16.4637 6.2 16.4637 5.4C16.4637 3.6 14.9594 2.1 13.1543 2.1C12.1515 2.1 11.1486 2.6 10.4467 3.4C10.1458 3.7 9.84495 3.8 9.5441 3.8C9.24325 3.8 8.9424 3.6 8.74183 3.4C8.03984 2.6 7.037 2.1 6.03417 2.1C4.22906 2.1 2.7248 3.6 2.7248 5.4C2.62452 6.3 3.02565 7 3.42679 7.5C3.3265 7.5 3.3265 7.5 3.42679 7.5Z" fill="black"/>
-            </svg>
-            <span class="favourite__counter">12</span>
+            <svg class="favourite__icon" width="19" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.4 17a1 1 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 6 0c1.3 0 2.5.5 3.5 1.3C10.5.5 12 0 13.1 0c3 0 5.5 2.4 5.5 5.4 0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.3.2-.5.3-.9.3Zm-6-9.5 6.1 6.9 6.3-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.8 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4A3.7 3.7 0 0 0 6 2.1a3.3 3.3 0 0 0-3.3 3.3c0 .9.3 1.6.7 2.1Z" fill="#000"/></svg>
+            <span class="favourite__counter"></span>
           </button>
         </div>
         <a class="header__link" href="#">хочу сюда!</a>
@@ -50,121 +46,122 @@
   </header>
   <main>
     <section class="hotels">
-      <h1 class="hotels__title">Гостиницы Седоны</h1>
-      <ul class="breadcrumbs">
-        <li class="breadcrumbs__item">
-          <a class="breadcrumbs__home" href="index.html">
-          </a>
-        </li>
-        <li class="breadcrumbs__item">
-          <a class="breadcrumbs__hotels" href="/">Гостиницы</a>
-        </li>
-      </ul>
-      <form class="hotels-form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="hotels-form__fieldset">
-          <legend class="hotels-form__title">Инфраструктура:</legend>
-          <label class="hotels-form__label">Бассейн
-            <input 
-              class="hotels-form__input"
-              type="checkbox"
-              name="hotels-form-pool"
-              id="hotels-form-pool"
-              checked 
-            />
-            <span class="hotels-form__custom-checkbox"></span>
-          </label>
-          <label class="hotels-form__label">Парковка
-            <input 
-              class="hotels-form__input"
-              type="checkbox"
-              name="hotels-form-parking"
-              id="hotels-form-parking"
-              checked 
-            />
-            <span class="hotels-form__custom-checkbox"></span>
-          </label>
-          <label class="hotels-form__label">Wi-Fi
-            <input 
-              class="hotels-form__input"
-              type="checkbox"
-              name="hotels-form-wifi"
-              id="catalog-form-wifi" 
-            />
-            <span class="hotels-form__custom-checkbox"></span>
-          </label>
-        </fieldset>
-        <fieldset class="hotels-form__fieldset">
-          <legend class="hotels-form__title">Тип жилья:</legend>
-          <label class="hotels-form__label">Гостиница
-            <input 
-              class="hotels-form__input"
-              type="radio"
-              name="catalog-form-housing"
-              id="hotels-form-hotel"
-              checked 
-            />
-            <span class="hotels-form__custom-checkbox"></span>
-          </label>
-          <label class="hotels-form__label">Мотель
-            <input 
-              class="hotels-form__input"
-              type="radio"
-              name="hotels-form-housing"
-              id="hotels-form-motel" 
-            />
-            <span class="hotels-form__custom-checkbox"></span>
-          </label>
-          <label class="hotels-form__label">Апартаменты
-            <input 
-              class="hotels-form__input"
-              type="radio"
-              name="hotels-form-housing"
-              id="hotels-form-appartment" 
-            />
-            <span class="hotels-form__custom-checkbox"></span>
-          </label>
-        </fieldset>
-        <fieldset class="hotels-form__fieldset">
-          <legend class="hotels-form__title">Стоимость, ₽:</legend>
-          <label class="hotels-form__from">
-            <input 
-              class="hotels-form__min"
-              type="number"
-              value="0"
-              name="min-price" 
-            />
-            от
-          </label>
-          <label class="hotels-form__to">
-            <input 
-              class="hotels-form__max"
-              type="number"
-              value="9000"
-              name="max-price" 
-            />
-            до
-          </label>
-          <div class="range">
-            <button class="range__button toggle-min" type="button">
-              <span class="visually-hidden">Изменить минимальную цену.</span>
-            </button>
-            <button class="range__button toggle-max" type="button">
-              <span class="visually-hidden">Изменить максимальную цену.</span>
-            </button>
-            <div class="range__pseudo-range"></div>
+      <div class="hotels__wrapper">
+        <h1 class="hotels__title">Гостиницы Седоны</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__home" href="index.html"></a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__hotels" href="/">Гостиницы</a>
+          </li>
+        </ul>
+        <form class="hotels-form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="hotels-form__fieldset">
+            <legend class="hotels-form__title">Инфраструктура:</legend>
+            <label class="hotels-form__label">Бассейн
+              <input 
+                class="hotels-form__input"
+                type="checkbox"
+                name="hotels-form-pool"
+                id="hotels-form-pool"
+                checked 
+              />
+              <span class="hotels-form__custom-checkbox"></span>
+            </label>
+            <label class="hotels-form__label">Парковка
+              <input 
+                class="hotels-form__input"
+                type="checkbox"
+                name="hotels-form-parking"
+                id="hotels-form-parking"
+                checked 
+              />
+              <span class="hotels-form__custom-checkbox"></span>
+            </label>
+            <label class="hotels-form__label">Wi-Fi
+              <input 
+                class="hotels-form__input"
+                type="checkbox"
+                name="hotels-form-wifi"
+                id="catalog-form-wifi" 
+              />
+              <span class="hotels-form__custom-checkbox"></span>
+            </label>
+          </fieldset>
+          <fieldset class="hotels-form__fieldset">
+            <legend class="hotels-form__title">Тип жилья:</legend>
+            <label class="hotels-form__label">Гостиница
+              <input 
+                class="hotels-form__input"
+                type="radio"
+                name="catalog-form-housing"
+                id="hotels-form-hotel"
+                checked 
+              />
+              <span class="hotels-form__custom-checkbox"></span>
+            </label>
+            <label class="hotels-form__label">Мотель
+              <input 
+                class="hotels-form__input"
+                type="radio"
+                name="hotels-form-housing"
+                id="hotels-form-motel" 
+              />
+              <span class="hotels-form__custom-checkbox"></span>
+            </label>
+            <label class="hotels-form__label">Апартаменты
+              <input 
+                class="hotels-form__input"
+                type="radio"
+                name="hotels-form-housing"
+                id="hotels-form-appartment" 
+              />
+              <span class="hotels-form__custom-checkbox"></span>
+            </label>
+          </fieldset>
+          <fieldset class="hotels-form__fieldset">
+            <legend class="hotels-form__title">Стоимость, ₽:</legend>
+            <label class="hotels-form__from">
+              <input 
+                class="hotels-form__min"
+                type="number"
+                value="0"
+                name="min-price" 
+              />
+              от
+            </label>
+            <label class="hotels-form__to">
+              <input 
+                class="hotels-form__max"
+                type="number"
+                value="9000"
+                name="max-price" 
+              />
+              до
+            </label>
+            <div class="range">
+              <button class="range__button toggle-min" type="button">
+                <span class="visually-hidden">Изменить минимальную цену.</span>
+              </button>
+              <button class="range__button toggle-max" type="button">
+                <span class="visually-hidden">Изменить максимальную цену.</span>
+              </button>
+              <div class="range__pseudo-range"></div>
+            </div>
+          </fieldset>
+          <div class="hotels-form__buttons">
+            <button class="hotels-form__get" type="submit">Применить</button>
+            <button class="hotels-form__reset" type="reset">Сбросить</button>
           </div>
-        </fieldset>
-        <div class="hotels-form__buttons">
-          <button type="submit">Применить</button>
-          <button type="reset">Сбросить</button>
-        </div>
-      </form>
+        </form>
+      </div>
     </section>
     <section class="result">
       <h2 class="visually-hidden">Результаты поиска.</h2>
       <div class="result__wrapper">
         <div class="result__heading">
-          <h2 class="result__title">Найдено гостиниц: 38</h2>
+          <h2 class="title result__title">Найдено гостиниц: 38</h2>
           <form class="result__form sorting" action="https://echo.htmlacademy.ru" method="post">
             <span class="visually-hidden" for="sort">Сортировка.</span>
             <select class="sorting__select" id="sort" name="sort">
@@ -195,7 +192,7 @@
                 <img class="catalog-card__img" src="media/pics/result1.jpg" width="300" height="206" alt="Изображение к карточке.">
                 <h3 class="catalog-card__title">Amara Resort & Spa</h3>
               <div class="catalog-card__left">
-                <p class="catalog-card__housing">Гостинца</p>
+                <p class="catalog-card__housing">Гостиница</p>
                 <a class="catalog-card__link" href="#">Подробнее</a>
                 <div class="catalog-card__stars">
                   <svg class="star" width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h18v17H0z"/></clipPath></defs></svg>
@@ -214,7 +211,7 @@
                 <img class="catalog-card__img" src="media/pics/result2.jpg" width="300" height="206" alt="Изображение к карточке.">
                 <h3 class="catalog-card__title">Desert Quail Inn</h3>
               <div class="catalog-card__left">
-                <p class="catalog-card__housing">Гостинца</p>
+                <p class="catalog-card__housing">Гостиница</p>
                 <a class="catalog-card__link" href="#">Подробнее</a>
                 <div class="catalog-card__stars">
                   <svg class="star" width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h18v17H0z"/></clipPath></defs></svg>
@@ -232,7 +229,7 @@
                 <img class="catalog-card__img" src="media/pics/result3.jpg" width="300" height="206" alt="Изображение к карточке.">
                 <h3 class="catalog-card__title">Villas at Poco Diablo</h3>
               <div class="catalog-card__left">
-                <p class="catalog-card__housing">Гостинца</p>
+                <p class="catalog-card__housing">Гостиница</p>
                 <a class="catalog-card__link" href="#">Подробнее</a>
                 <div class="catalog-card__stars">
                   <svg class="star" width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h18v17H0z"/></clipPath></defs></svg>
@@ -249,7 +246,7 @@
                 <img class="catalog-card__img" src="media/pics/result4.jpg" width="300" height="206" alt="Изображение к карточке.">
                 <h3 class="catalog-card__title">GreenTree Inn</h3>
               <div class="catalog-card__left">
-                <p class="catalog-card__housing">Гостинца</p>
+                <p class="catalog-card__housing">Гостиница</p>
                 <a class="catalog-card__link" href="#">Подробнее</a>
                 <div class="catalog-card__stars">
                   <svg class="star" width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h18v17H0z"/></clipPath></defs></svg>
@@ -263,7 +260,7 @@
               </div>
             </li>
           </ul>
-          <button class="result__button" type="button">Загрузить ещё</button>
+          <button class="link-text result__button" type="button">Загрузить ещё</button>
         </div>
         <div class="result__additionally">
           <ul class="pagination">
@@ -299,8 +296,8 @@
     </section>
     <section class="subscription">
       <div class="subscription__wrapper">
-        <h2 class="subscription__title">Подпишись на нашу рассылку</h2>
-        <p class="subscription__subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <h2 class="title subscription__title">Подпишись на нашу рассылку</h2>
+        <p class="subtitle subscription__subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscription__form subscription-form" action="https://echo.htmlacademy.ru" method="post">
           <input 
             class="subscription-form__input"
@@ -310,7 +307,7 @@
             placeholder="Ваш e-mail"
             required 
           />
-          <button class="subscription-form__button" type="submit">Подписаться</button>
+          <button class="link-text subscription-form__button" type="submit">Подписаться</button>
         </form>
       </div>
     </section>
